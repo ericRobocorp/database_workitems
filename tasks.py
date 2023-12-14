@@ -6,6 +6,7 @@ from RPA.Excel.Files import Files as Excel
 from RPA.Database import Database
 import random
 
+"""name of the table hosting the data"""
 TABLE = "workitems"
 
 
@@ -76,10 +77,14 @@ def connect_to_database():
 
 
 def close_database_connection(database):
+    """Remember to always close the database connection"""
     database.disconnect_from_database
 
 
 def store_workitems_in_database(name, zip_code, items, db):
+    """We use the random.randint(10000, 40000) to create a random ID which will be used to recall the information in the consumer step
+    Because we grouped the items to be ordered in a list of strings, we combine them into one string to be stored in the database for simplicity with the ",".joins(items) statement
+    """
     random_id = random.randint(10000, 40000)
     string_items = ",".join(items)
     variables = f"('{random_id}', '{name}', '{zip_code}', '{string_items}')"
@@ -89,6 +94,7 @@ def store_workitems_in_database(name, zip_code, items, db):
 
 
 def get_workitems_from_database(id, db):
+    """We retrieve the work items from the database using the {id} created when we stored them"""
     get_data = f"SELECT name, zip, items FROM {TABLE} WHERE id={id}"
     work_item = db.query(get_data)
     row = work_item.data[0]
