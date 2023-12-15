@@ -12,6 +12,5 @@ dependencies:
   - pip:
     - rpaframework==27.7.0        # https://rpaframework.org/releasenotes.html
     - robocorp==1.2.4             # https://pypi.org/project/robocorp
-    - robocorp-browser==2.2.1     # https://pypi.org/project/robocorp-browser
     - PyMySQL==1.1.0
 

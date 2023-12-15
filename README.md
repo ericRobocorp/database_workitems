@@ -1,6 +1,6 @@
 # Storing Work-Items in a database
 
-Utilizing Robocorp's Control Room and work-items is a powerful solution for getting work done quickly. But for security or other reasons if you do not want to store the work-item data in Control Room you have the option to store them in a local database that your self-hosted worker can access.
+Utilizing Robocorp's Control Room and work-items is a powerful solution for getting work done quickly. If you want to apply your own security requirements to stored items or have other reasons you do not want to store the work-item data in Control Room you have the option to store them in a local database that your self-hosted worker can access.
 
 **This tutorial provides you the Producer Consumer template for storing work-items on a local database**
 
@@ -53,7 +53,6 @@ dependencies:
   - pip:
     - rpaframework==27.7.0
     - robocorp==1.2.4
-    - robocorp-browser==2.2.1
     - PyMySQL==1.1.0
 ```
 
