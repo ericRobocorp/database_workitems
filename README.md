@@ -33,10 +33,10 @@ Once all is installed, do the following (if you follow the names exactly, the co
 
 4. Create one [Robocorp Vault](https://robocorp.com/docs/development-guide/variables-and-secrets/vault) items that house your secrets:
   - Name it `mysql_data` which will contain the following items needed to connect to your database
-  - - `database` that contains the name of the database you are connecting to
-  - - `username` user that can access the database
-  - - `password` user password
-  - - `location` IP Address of the database you are connecting to
+    - `database` that contains the name of the database you are connecting to
+    - `username` user that can access the database
+    - `password` user password
+    - `location` IP Address of the database you are connecting to
 
 
 ## Code explanation
