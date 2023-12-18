@@ -1,13 +1,13 @@
-# Storing Work-Items in a database
+# Storing Work Items in a database
 
-Utilizing Robocorp's Control Room and work-items is a powerful solution for getting work done quickly. If you want to apply your own security requirements to stored items or have other reasons you do not want to store the work-item data in Control Room you have the option to store them in a local database that your self-hosted worker can access.
+Utilizing Robocorp's Control Room and work items is a powerful solution for getting work done quickly. If you want to apply your own security requirements to stored items or have other reasons you do not want to store the work item data in Control Room you have the option to store them in a local database that your self-hosted worker can access.
 
-**This tutorial provides you the Producer Consumer template for storing work-items on a local database**
+**This tutorial provides you the Producer Consumer template for storing work items on a local database**
 
 This template leverages the new Python open-source framework [robo](https://github.com/robocorp/robo), and [libraries](https://github.com/robocorp/robo#libraries) from the same project. It provides a template for storing data locally. In this case, we are focusing on these highlights:
 
-- Producer will store work-items in the database while storing a unique ID in Control Room for retrieval
-- Consumer will get the unique ID from Control Room the query the database for the work-item data
+- Producer will store work items in the database while storing a unique ID in Control Room for retrieval
+- Consumer will get the unique ID from Control Room the query the database for the work item data
 - This example uses MySql but can easily be transitioned for any database following the API specification 2.0
 
 ## What you'll need
