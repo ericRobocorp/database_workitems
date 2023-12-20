@@ -74,8 +74,6 @@ While you can upload your project directly from VS Code to the Control Room (Com
 
 It's easy: Tasks tab under your Workspace, Add Task Package, give it a name, and paste the link to the repo. Done.
 
-![create-tasks](https://github.com/robocorp/example-timescale-vector-loader/assets/40179958/95cf3b7f-6604-4f68-8455-bbef780ce954)
-
 ### 2. Create a Process
 
 Next up, you'll need to create a Process. Tasks are reusable components that you can use to build sequences of actions. When creating a Process you'll map your chosen Tasks with the Worker runtimes.
@@ -84,13 +82,9 @@ Follow the UI again, as the video below shows. Processes, Create a new Process a
 
 Once that's done, you'll have an opportunity to either set the scheduling, or create an email trigger. We'll choose the latter. In the last step, you can create alerts and callbacks to Slack, Email and as Webhook calls. In this example we set a Slack notification for both successfull and unsuccessful runs.
 
-![create-process](https://github.com/robocorp/example-timescale-vector-loader/assets/40179958/32a67f01-05c6-4065-a6de-e67fe3a86e92)
-
 ### 3. Run it manually
 
 Once the Proces is created, time to run it! Hit the Run Process button and choose Run with Input Data, and give a file as an input. Once the run starts, you'll see the producer creating new rows in your local database and then the consumer will use them! 🤞
-
-<img width="1279" alt="run-process" src="https://github.com/robocorp/example-timescale-vector-loader/assets/40179958/fecb6904-4f5e-427a-aa72-140044bb7f00">
 
 **Tip:** open the Process run for detailed log on the execution.
 
